@@ -2,3 +2,26 @@
     box-sizing: border-box;
     margin: 0;
 }
+#root {
+    background-color:   #007bff28;
+    min-height: 100vh;
+}
+
+.navbar_my a {
+    color: rgba(245, 222, 179, 0.699);
+    margin-right: 25px;
+    margin-left: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: transparent 2px solid;
+    padding: 5px;
+}
+
+.navbar_my a:hover {
+    color:rgb(255, 255, 255)
+}
+
+.nav_active {
+    border-bottom: tomato 2px solid !important; 
+    color: white !important;
+}
