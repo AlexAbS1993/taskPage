@@ -2,9 +2,9 @@
   "name": "taskpage",
   "version": "1.0.0",
   "description": "This is a taskpage for Evgeniy and Alex from seasonvar.ru",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cross-env NODE_ENV=development webpack serve --mode development"
   },
   "keywords": [
     "tasks",
@@ -16,16 +16,25 @@
   "devDependencies": {
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.2",
+    "@types/react-router-dom": "^5.1.7",
     "clean-webpack-plugin": "^3.0.0",
     "cross-env": "^7.0.3",
+    "css-loader": "^5.1.2",
     "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.3.9",
+    "raw-loader": "^4.0.2",
+    "style-loader": "^2.0.0",
     "ts-loader": "^8.0.18",
     "typescript": "^4.2.3",
     "webpack": "^5.24.4",
-    "webpack-cli": "^4.5.0"
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "redux-thunk": "^2.3.0"
   }
 }
